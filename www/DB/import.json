@@ -1,0 +1,75 @@
+{
+  "category" : {
+    "cat01" : "Burger",
+    "cat02" : "Drinks"
+  },
+  "featured" : {
+    "item1" : "slide_1",
+    "item2" : "slide_2"
+  },
+  "menu" : {
+    "item1" : {
+      "available" : true,
+      "category" : "cat01",
+      "description" : "item1 description",
+      "image" : "chicken_maharaja",
+      "name" : "BRASILEIRA",
+      "price" : 29,
+      "stock" : 100
+    },
+    "item2" : {
+      "available" : true,
+      "category" : "cat01",
+      "description" : "item2 description",
+      "image" : "big_spicy_chicken_wrap",
+      "name" : "CAIPIRA",
+      "price" : 28,
+      "stock" : 100
+    },
+    "item3" : {
+      "available" : true,
+      "category" : "cat02",
+      "description" : "item3 description",
+      "image" : "thumsup",
+      "name" : "Coca-Cola 350ml",
+      "price" : 4,
+      "stock" : 100
+    },
+    "item4" : {
+      "available" : true,
+      "category" : "cat02",
+      "description" : "item4 description",
+      "image" : "mccafe_ice_coffee",
+      "name" : "Fanta Laranja 350ml",
+      "price" : 4,
+      "stock" : 100
+    },
+    "item5" : {
+      "available" : true,
+      "category" : "cat01",
+      "description" : "Presunto, ovos, cebola, azeitona verde e mussarela",
+      "image" : "mc_chicken",
+      "name" : "PORTUGUESA",
+      "price" : 28.50,
+      "stock" : 100
+    },
+    "item6" : {
+      "available" : true,
+      "category" : "cat02",
+      "description" : "item6 description",
+      "image" : "Smoothie",
+      "name" : "Pepsi 350ml",
+      "price" : 5,
+      "stock" : 100
+    },
+    "item8" : {
+      "available" : true,
+      "category" : "cat01",
+      "description" : "item8 description",
+      "image" : "salad_wrap",
+      "name" : "MARGUERIA",
+      "price" : 27.50,
+      "stock" : 100
+    }
+  }
+}

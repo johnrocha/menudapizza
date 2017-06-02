@@ -1,0 +1,148 @@
+<ion-view style="background-image:url('http://www.menudapizza.com.br/wp-content/uploads/2016/03/brick_bg_menor.jpg')" class="" id="page7" title="Menu" >
+
+
+  <!-- loadMenu() is called to load the menu array  -->
+  <ion-content class="has-header" padding="false"  ng-init="loadMenu()"  >
+    <!-- $index is the iterating variable
+    To access individual elements of the array we use menu[$index]
+    Each row contains two columns. We use $index % 2 === 0 so that
+    we only add 1 row when the $index is incremented by 2, rather than adding 2 rows.
+    -->
+    <div class="card" ng-repeat="item in menu" ng-if="$index % 1 === 0" style="border-top: 1px solid #999;">
+      <!-- Column 1-->
+      <!-- We use $index to 1st column elements -->
+      <!--<div class="col col-50 " ng-if="$index < menu.length" style="padding:1px;border-right:1px solid #999" >-->
+        <div class="item item-image" style="border-width: 0px; border-style: none;">
+          <img ng-click="showProductInfo(menu[$index].$id)" ng-src="{{'img/fk/'+ menu[$index].image +'.jpg'}}" width="10%" />
+        </div>
+        <a class="item item-icon-right assertive" href="#"  style="border-width: 0px; border-style: none;" >
+          <p ng-click="showProductInfo(menu[$index].$id)" style="font-size: 16px;text-align:left;">{{menu[$index].name}} <br/>
+            <span style="font-size: large; font-weight: bold;color: black;">R$ {{menu[$index].price}}</span>
+          </p>
+          <i style="font-size: 32px; margin-right:0px;right:0px;"  ng-click="addToCart(menu[$index])" class="icon ion-ios-cart"></i>
+        </a>
+      </div>
+      <!-- Column 2-->
+      <!-- We use $index+1 to access 2nd column elements -->
+      <!--<div class="col col-50 " ng-if="$index+1  < menu.length" style="padding:1px;">-->
+        <!--<div class="item item-image" style="border-width: 0px; border-style: none;">-->
+          <!--<img ng-click="showProductInfo(menu[$index+1].$id)" ng-src="{{'img/fk/'+ menu[$index+1].image +'.jpg'}}" width="100%" />-->
+        <!--</div>-->
+        <!--<a class="item item-icon-right assertive" href="#"  style="border-width: 0px; border-style: none;" >-->
+          <!--<p ng-click="showProductInfo(menu[$index+1].$id)" style="font-size: 20px;text-align:left; color: #BBDEFB; font-weight: bold">{{menu[$index+1].name}} <br/>-->
+            <!--<span style="font-size: large; font-weight: bold;color: black;">R$ {{menu[$index+1].price}}</span>-->
+          <!--</p>-->
+          <!--<i style="font-size: 32px;right: 0px;"  ng-click="addToCart(menu[$index+1])" class="icon ion-ios-cart"></i>-->
+        <!--</a>-->
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+
+<!--OUTRO            ODFIFJOIJDF -->
+
+<!--<ion-nav-bar></ion-nav-bar>-->
+<!--<ion-view view-title="HOME" style="background-image:url('http://www.menudapizza.com.br/wp-content/uploads/2016/03/brick_bg_menor.jpg')" class="img-responsive-bkg">-->
+
+  <!--<img src="img/menudapizza" class="img-responsive">-->
+  <!--<ion-content class="padding">-->
+    <!--&lt;!&ndash;<a href="#/sell/" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Quatro Queijos&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Frango Catupiry &ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Bauru Gigante&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Berinjela&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Margeritta&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Alho-Poró&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Portuguesa&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="#/sell" class="item item-icon-left">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="icon ion-pizza"></i>&ndash;&gt;-->
+    <!--&lt;!&ndash;Toscana&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--<ion-nav-buttons side="left">-->
+
+
+    <!--</ion-nav-buttons>-->
+    <!--<ion-nav-buttons side="right">-->
+
+    <!--</ion-nav-buttons>-->
+    <!--<ion-slide-box on-slide-changed="slideChanged(index)">-->
+      <!--<ion-slide >-->
+        <!--<a href="#/menudapizza">-->
+          <!--<img src="img/slider1.jpg" class="img">-->
+        <!--</a>-->
+      <!--</ion-slide>-->
+      <!--<ion-slide>-->
+
+        <!--<img src="img/slider2.jpg" class="img">-->
+
+      <!--</ion-slide>-->
+      <!--<ion-slide>-->
+
+        <!--<img src="img/slider3.jpg" class="img">-->
+
+      <!--</ion-slide>-->
+    <!--</ion-slide-box>-->
+    <!--<br>-->
+
+      <!--<button class="button button-block button-dark">-->
+        <!--TRADICIONAIS-->
+      <!--</button>-->
+
+
+      <!--<button class="button button-block button-dark">-->
+        <!--FIT-->
+      <!--</button>-->
+      <!--<button class="button button-block button-dark">-->
+        <!--ESPECIAIS-->
+      <!--</button>-->
+
+
+
+      <!--<button class="button button-block button-dark">-->
+        <!--PROMOÇÕES-->
+      <!--</button>-->
+
+    <!--<br>-->
+    <!--<br>-->
+    <!--<br>-->
+    <!--<br>-->
+    <!--<p>-->
+    <!--<button class="button button-block button-positive-900 icon-right ion-beer">-->
+      <!--BEBIDAS-->
+    <!--</button>-->
+    <!--</p>-->
+  <!--</ion-content>-->
+<!--</ion-view>-->
+
+

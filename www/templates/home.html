@@ -1,0 +1,89 @@
+<ion-nav-bar></ion-nav-bar>
+<ion-view view-title="HOME" style="background-image:url(img/background.jpg)" class="img-responsive-bkg">
+
+  <img src="img/menudapizza" class="img-responsive">
+  <ion-content class="padding">
+
+    <ion-nav-buttons side="left">
+
+
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+
+    </ion-nav-buttons>
+    <ion-slide-box on-slide-changed="slideChanged(index)"
+                   does-continue="true"
+                   auto-play="true">
+      <ion-slide >
+        <a href="#/page7">
+          <img src="img/slider1.jpg" class="img">
+        </a>
+      </ion-slide>
+      <ion-slide>
+
+        <img src="img/slider2.jpg" class="img">
+
+      </ion-slide>
+      <ion-slide>
+
+        <img src="img/slider3.jpg" class="img">
+
+      </ion-slide>
+    </ion-slide-box>
+    <br>
+    <br>
+    <br>
+    <button class="button button-block  button-large button-dark"  ng-click="startApp()">
+      TRADICIONAIS
+    </button>
+
+    <button class="button button-block  button-large button-dark"  ng-click="startApp()">
+      FIT
+    </button>
+
+    <button class="button button-block button-large button-dark"  ng-click="startApp()">
+      DOCES
+    </button>
+
+    <button class="button button-block button-large button-dark" ng-click="startApp()">
+     ESPECIAIS
+    </button>
+
+    <!--<ion-slide-box-->
+      <!--does-continue="true"-->
+      <!--auto-play="true">-->
+
+      <!--<ion-slide>-->
+        <!--<div class = "box1">-->
+          <!--<img src="img/slider1.jpg" class="img">-->
+        <!--</div>-->
+      <!--</ion-slide>-->
+
+      <!--<ion-slide>-->
+        <!--<div class = "box2">-->
+          <!--<h1>Box 2</h1>-->
+        <!--</div>-->
+      <!--</ion-slide>-->
+
+      <!--<ion-slide>-->
+        <!--<div class = "box3">-->
+          <!--<h1>Box 3</h1>-->
+        <!--</div>-->
+      <!--</ion-slide>-->
+
+    <!--</ion-slide-box>-->
+
+
+    <br>
+    <br>
+    <br>
+    <p>
+      <button class="button button-block icon-right ion-beer button-large button-calm-900">
+        BEBIDAS
+      </button>
+    </p>
+
+  </ion-content>
+</ion-view>
+
+
